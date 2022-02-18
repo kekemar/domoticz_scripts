@@ -32,7 +32,7 @@ local scriptVersion     = '2.07'
 local response = "vigilance_meteoFrance"
 return {
     active = true,
-    on =        {       timer           =   { "every minute"},
+    on =        {       timer           =   { "every minute"}, -- ou "every hour" pour un test par heur
                         httpResponses   =   {  response } },
 
     logging =   {  -- level    =   domoticz.LOG_DEBUG,
